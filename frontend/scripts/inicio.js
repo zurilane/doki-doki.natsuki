@@ -70,7 +70,7 @@ menuBtns.addEventListener("click", (e) => {
         selectSound.play();
         if (e.target.id === "new-game") {
             config.setNewGame() 
-            window.open("/Game", "_self")
+            window.open("juego.html", "_self")
         }
 
         else if (e.target.id === "load-game"){
@@ -126,7 +126,7 @@ menuBtns.addEventListener("click", (e) => {
                 element.addEventListener("click",(e)=> {
                     console.log(arrSave[e.target.classList[1]])
                     localStorage.setItem("currentGame", arrSave[e.target.classList[1]].index)
-                    window.open("/game", "_self");
+                    window.open("juego.html", "_self")
                 })
             }
         }
